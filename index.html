@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Readex+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/pub/style.css">
+    <title>Space News</title>
+    <style>
+      @import "./node_modules/fluid-player/dist/fluidplayer.min.css";
+      
+      
+        body{
+            margin: 0px 0px 0px 0px;
+            background-image: url(img/star.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        ::-webkit-scrollbar{
+          width: 0;
+        }
+
+        .navbar {
+            transition: top 0.3s;
+            z-index: 9999;
+}
+
+      #more{
+        display: none;
+      }
+
+    .img-txt {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar fixed top-0 w-full bg-black/30 backdrop-blur">
+  <nav>
+    <h6 class="text-center p-8 text-4xl font-serif text-white drop-shadow-lg tracking-wide">Space <span class="text-red-500">News</span></h6>
+ </nav>
+    </div>
+
+        <div class="mx-auto h-full w-full sm:max-w-[800px] bg-black/30 p-5 mt-[108px]">
+            <div class="flex flex-wrap">
+              <div class="w-full h-full my-10 mt-5">
+              <h1 class="font-serif text-4xl text-white drop-shadow-xl">Latest N<span class="border-b-2 border-red-500 lowercase">ews</span></h1>
+            </div>
+
+
+            <div class="w-full h-full bg-black p-5 rounded-t-md">
+                <h1 class="text-white font-serif text-xl md:text-4xl">SATELLITE WILL DIE BY FIRE AS 1ST-OF-ITS-KIND OPERATION SENDS IT PLUMMETING DOWN TO EARTH</h1>
+                <p class="text-xs text-slate-400">By <span class="text-blue-400">Robert Lea</span> published 1 day ago</p>
+            </div>
+            <div>
+                <img src="img/space.webp"> 
+            </div>
+            <div class="w-full h-full bg-white p-5 rounded-b-md">
+              <div id="dots">
+                <p class="text-sm font-ReadexPro font-thin w3-animate-bottom" id="more">Scientists are preparing for a "first-of-its-kind" operation to steer a dead satellite back to Earth in a safe assisted re-entry. 
+                    The satellite that will be the subject of this guided return to Earth is the European Space Agency (ESA) wind-monitoring Aeolus spacecraft. At a press conference on Wednesday (July 19), ESA scientists explained how they will attempt to guide the return of Aeolus to Earth, which should happen on Friday, July 28. 
+                    "This is quite unique, what we're doing. You don't find really examples of this in the history of spaceflight," head of ESA's Space Debris Office Holger Krag said during the press briefing. "This is the first time to our knowledge, we have done an assisted re-entry like this."</p>
+                    </div>
+                    <button onclick="toggleText()" id="myBtn"><span class="text-sm text-slate-500 hover:underline">More</span></button>
+                  </div>
+
+
+                  <div class="w-full h-full bg-black p-5 rounded-t-md mt-10">
+                    <h1 class="text-white font-serif text-xl md:text-4xl uppercase">SPACEX LAUNCH 22 STARLINK SATELLITES TO ORBIT SUNDAY NIGHT</h1>
+                    <p class="text-xs text-slate-400">By <span class="text-blue-400">Mike Wall</span> published 1 day ago</p>
+                </div>
+                <div class="w-full sm:h-[200px]">
+                  <iframe width="100%" height="200%" class="relative" src="https://www.youtube.com/embed/qvwF3P8eF6Q" title="Starlink Mission" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>               
+                 </div>
+
+                 <div class="w-full h-full bg-black p-5 rounded-t-md mt-[185px] sm:mt-[240px]">
+                  <h1 class="text-white font-serif text-xl md:text-4xl uppercase">China launches first communications satellite with flexible solar wing</h1>
+                  <p class="text-xs text-slate-400">By <span class="text-blue-400">CGTN</span> published July 24</p>
+              </div>
+              <div class="relative h-full w-full overflow-hidden rounded-b-md">
+                <img src="img/china.jpeg">
+                <div class="img-txt h-full w-full absolute top-[50%] hover:opacity-[1] hover:bg-black/30">
+                  <p class="font-ReadexPro text-white absolute bottom-0 p-4 text-xs sm:text-lg">China launched its first flat-panel stackable satellite with a flexible solar wing on Sunday, along with another three remote sensing satellites, from the Taiyuan Satellite Launch Center in north China's Shanxi Province. Sent by a Long March-2D rocket which blasted off at 10:50 a.m. Beijing Time, all four satellites have entered their preset orbit.</p>
+                </div>
+               </div>
+                 
+
+        </div>
+
+        </div>
+        
+        <div class="w-full h-full  bg-black p-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 row-auto gap-3 sm:gap-2 lg:px-28">
+          <h2 class="text-5xl aspect-[4/3] text-white font-serif lg:flex hidden"><span class="self-center">Top Videos</span>
+            </h2> 
+            <h1 class="lg:hidden text-4xl text-white font-serif p-10 sm:text-5xl w3-animate-left">Top Videos</h1>
+          <div class="column aspect-video sm:col-span-2 lg:col-span-3 rounded-sm overflow-hidden grid"> 
+            <video fluidPlayer id="video-id" width="100%"><source src="img/as.mp4" type="video/mp4" /> 
+            </video>
+          </div>
+          <div class="column aspect-video rounded-sm overflow-hidden ">
+            <video fluidPlayer id="video" width="100%"><source src="img/valerian-480p.mkv" type="video/mp4" />
+            </video>
+            </div>
+          <div class="column aspect-video rounded-sm overflow-hidden ">
+            <video fluidPlayer id="video1" width="100%"><source src="img/valerian-480p.mkv" type="video/mp4" />
+            </video>
+          </div>
+          <div class="column aspect-video rounded-sm overflow-hidden ">
+            <video fluidPlayer id="video2" width="100%"><source src="img/valerian-480p.mkv" type="video/mp4" />
+            </video>
+          </div>
+          <div class="column aspect-video rounded-sm overflow-hidden ">
+            <video fluidPlayer id="video3" width="100%"><source src="img/valerian-480p.mkv" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>  
+
+      <div class="relative">
+        <img src="img/f.jpg" class="bg-cover">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+        <h1 class="text-white absolute font-serif text-3xl sm:text-5xl bottom-24 right-16 shadow-xl p-4 rounded-lg duration-200 hover:bg-black/40">Starling Takes Flight</h1>
+   </div> 
+      </div>
+
+      <div class="relative">
+        <img src="img/earthday.jpg" class="bg-cover">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h1 class="text-white absolute font-serif text-3xl sm:text-5xl bottom-24 right-16 shadow-xl p-4 rounded-lg duration-200 hover:bg-black/40">Celebrating Earth Day</h1>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="img/artemis.jpg" class="bg-cover">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h1 class="text-white absolute font-serif text-3xl sm:text-5xl bottom-24 right-16 shadow-xl p-4 rounded-lg duration-200 hover:bg-black/40">Artemis II Crew Revealed</h1>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="img/assas.jpg" class="bg-cover">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h1 class="text-white absolute font-serif text-3xl sm:text-5xl bottom-24 right-16 shadow-xl p-4 rounded-lg duration-200 hover:bg-black/40">Earth’s Radiant Atmosphere</h1>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="img/hio.jpg" class="bg-cover">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h1 class="text-white absolute font-serif text-3xl sm:text-5xl bottom-24 right-16 shadow-xl p-4 rounded-lg duration-200 hover:bg-black/40">Sunrise Over the Pacific</h1>
+        </div>
+      </div>
+
+      <div class="w-full h-28 bg-black pt-10">
+        <div class="flex justify-center">
+          <h1 class="text-slate-300 text-xs font-ReadexPro font-extralight">sAm © 2023</h1>
+        </div>
+          <ul class="text-white flex text-[10px] justify-center gap-4 font-ReadexPro font-semibold">
+            <li><a href="https://github.com/XSam28">GITHUB</a></li>
+            <li><a href="https://www.nasa.gov/multimedia/imagegallery/iotd.html">NASA</a></li>
+            <li><a href="https://www.spacex.com/"></a>SPACEX</li>
+            <li><a href="https://www.spacex.com/media/privacy_policy_spacex.pdf">PRIVACY POLLICY</a></li>
+          </ul>
+      </div>
+
+
+
+
+<script>
+  
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.top = "0";
+  } else {
+    document.querySelector(".navbar").style.top = "-105px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+function toggleText() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "See"; 
+    moreText.style.display = "none";
+  } else {
+    btnText.innerHTML = "";
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+</script>
+
+
+<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+<script>
+
+var myFP = fluidPlayer(
+    'video-id',	{
+"layoutControls": {
+  title: 'Crew-5 Visits NASA Headquarters',
+    "controlBar": {
+        "animated": true,
+        "autoHide": false
+    },
+    "htmlOnPauseBlock": {
+        "html": null,
+        "height": null,
+        "width": null
+    },
+    "autoPlay": true,
+    "mute": true,
+    "allowTheatre": true,
+    "playPauseAnimation": false,
+    "playbackRateEnabled": false,
+    "allowDownload": false,
+    "playButtonShowing": false,
+    "fillToContainer": true,
+    "posterImage": "./img/c.jpg"
+},
+"vastOptions": {
+    "adList": [],
+    "adCTAText": false,
+    "adCTATextPosition": "left"
+}
+});
+
+var myFP = fluidPlayer(
+    'video',	{
+"layoutControls": {
+  title: 'The Cygnus space freighter',
+    "controlBar": {
+        "animated": true,
+        "autoHide": false
+    },
+    "htmlOnPauseBlock": {
+        "html": null,
+        "height": null,
+        "width": null
+    },
+    "autoPlay": false,
+    "mute": true,
+    "allowTheatre": true,
+    "playPauseAnimation": false,
+    "playbackRateEnabled": false,
+    "allowDownload": false,
+    "playButtonShowing": false,
+    "fillToContainer": true,
+    "posterImage": "./img/d.jpg"
+},
+"vastOptions": {
+    "adList": [],
+    "adCTAText": false,
+    "adCTATextPosition": ""
+}
+});
+  
+var myFP = fluidPlayer(
+    'video1',	{
+"layoutControls": {
+  title: 'Starling Takes Flight',
+    "controlBar": {
+        "animated": true,
+        "autoHide": false
+    },
+    "htmlOnPauseBlock": {
+        "html": null,
+        "height": null,
+        "width": null
+    },
+    "autoPlay": false,
+    "mute": true,
+    "allowTheatre": true,
+    "playPauseAnimation": false,
+    "playbackRateEnabled": false,
+    "allowDownload": false,
+    "playButtonShowing": false,
+    "fillToContainer": true,
+    "posterImage": "./img/f.jpg"
+},
+"vastOptions": {
+    "adList": [],
+    "adCTAText": false,
+    "adCTATextPosition": ""
+}
+});
+var myFP = fluidPlayer(
+    'video2',	{
+"layoutControls": {
+  title: 'A Full Moon Illuminates Artemis I',
+    "controlBar": {
+        "animated": true,
+        "autoHide": false
+    },
+    "htmlOnPauseBlock": {
+        "html": null,
+        "height": null,
+        "width": null
+    },
+    "autoPlay": false,
+    "mute": true,
+    "allowTheatre": true,
+    "playPauseAnimation": false,
+    "playbackRateEnabled": false,
+    "allowDownload": false,
+    "playButtonShowing": false,
+    "fillToContainer": true,
+    "posterImage": "./img/i.jpg"
+},
+"vastOptions": {
+    "adList": [],
+    "adCTAText": false,
+    "adCTATextPosition": ""
+}
+});
+var myFP = fluidPlayer(
+    'video3',	{
+"layoutControls": {
+  title: 'Eileen Collins, Discovery Pilot',
+    "controlBar": {
+        "animated": true,
+        "autoHide": false
+    },
+    "htmlOnPauseBlock": {
+        "html": null,
+        "height": null,
+        "width": null
+    },
+    "autoPlay": false,
+    "mute": true,
+    "allowTheatre": true,
+    "playPauseAnimation": false,
+    "playbackRateEnabled": false,
+    "allowDownload": false,
+    "playButtonShowing": false,
+    "fillToContainer": true,
+    "posterImage": "./img/ad.jpg"
+},
+"vastOptions": {
+    "adList": [],
+    "adCTAText": false,
+    "adCTATextPosition": ""
+}
+});
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
